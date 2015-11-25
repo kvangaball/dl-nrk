@@ -11,7 +11,8 @@
   "bin": {
     "dl-nrk": "index.js"
   },
-  "dependencies": {
-    "jsdom": "^5.6.0"
+  "dependencies": {},
+  "devDependencies": {
+    "jsdom": "^7.0.2"
   }
 }
