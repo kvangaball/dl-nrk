@@ -85,6 +85,14 @@ function hentEpisodeInfo(jobb){
       	navn = replaceAll(navn, " ", "_");
         navn = replaceAll(navn, ":", "_");
 
+        if(!url){
+          console.log('Fant ikke url, sannsynligvis fordi mangler rettigheter');
+          jobb.status = "ferdig";
+
+          poll();
+          return;
+        }
+
         if(!navn){
           console.log('Fant ikke tittel i resultat');
           jobb.status = "ferdig";
